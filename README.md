@@ -1,7 +1,7 @@
 # Draper::CanCanCan
 
 In CanCanCan version 13.0 and above, a breaking change was introduced to speed up CanCanCan applications with lots
-of rules. Unfortunately, it breaks DraperDecorator. DraperDecorator suggests that you should use decorates_assigned instead, but this is not feasable or worthwhile for most people since it requires changing every reference in the views from '@object' to simply 'object'. Additionally, if you need to reference can? in a view, it still breaks. So something like this code in your view doesn't work for a decorated object: 
+of rules. Unfortunately, it breaks DraperDecorator. DraperDecorator suggests that you should use decorates_assigned instead, but this is not feasable or worthwhile for most people since it requires changing every reference in the views from '@object' to simply 'object'. Additionally, if you need to reference can? in a view, it still breaks. So something like this code in your view doesn't work for a decorated object:
 
 This gem provides a simple one line change to restore sanity - simply include the gem and add a line to your ability class.
 
@@ -41,7 +41,7 @@ and that's it.
 In your CanCan ability class, prepend Draper::CanCanCan like this:
 
 ```
-class Ability 
+class Ability
   include CanCan::Ability
   prepend Draper::CanCanCan
 ...
@@ -55,12 +55,8 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
-## Contributing
+Guilherme Reis
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/GoodMeasuresLLC/draper-cancancan. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+* https://www.worldcode.com.br
 
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
+![alt text](https://res.cloudinary.com/dgxdamqhe/image/upload/v1545168182/logo_wc_png_irc4l2.png)
